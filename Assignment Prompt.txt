@@ -1,0 +1,78 @@
+Assignment Prompt: 
+
+Prompt – The exercise is split into Part 1 and Part 2, please see prompts and detail in respective sections below.
+
+ 
+
+Part 1 – worksheets “Part1_Calendarized_Usage” & “Part1_Usage_Curves”
+
+ 
+
+Dan’s Data Dispatch is a data analytics firm that is performing a data usage analysis for cell phone company Morgan Mobile. Dan is trying to determine the total number of calls, texts, and emails that were facilitated on the company’s network in each calendar month from Jan ‘16 – Jan ’17. The challenge is that the data set provided to Dan by Morgan Mobile to support the analysis only contains Summary invoices that show total volumes (Total_Usage) grouped by the type of Usage (Usage_Type – call, text, or email) over the term of an individual customer invoice (typically 25-40 day period, not necessarily all in a single month). Dan is trying to identify his monthly call, text, and email totals across the analysis term, but since the customer invoices often cross multiple months he needs to calendarize the invoices (split them across the appropriate calendar months).  To do this, Dan has been given average hourly volumes by Usage type (Usage_Curves) to benchmark off of, each based on previous years’ data. He was able to manually calculate the split basing off these curves for 2 invoices (Invoice_2 and Invoice_3). Dan is looking for a better way to calculate these splits using Excel formulas.
+
+ 
+
+The “Part1_Calendarized_Usage” worksheet in the attached workbook contains the list of Invoices from Morgan Mobile. Each Invoice contains the following indicators:
+
+ 
+
+Total_Usage – Total volume of calls, texts or emails per Usage_Type for the given period; Usage is reported in aggregate from a start date through an end date, not broken out at a more granular level
+ 
+
+Period_Start – The start date of the time period across which the Invoice spans
+ 
+
+Period_End – The end date of the time period across which the Invoice spans
+ 
+
+Usage_Type –Distinction provided on the invoice for what service type the invoice represents. The Usage_Type links the Invoice to an average hourly usage curve
+ 
+
+In the “Part1_Usage_Curve” worksheet the 3 Usage Curves (Calls, Texts, Emails) are provided and display average hourly usage by Usage Type.
+
+ 
+
+Using the 3 hourly Usage Curves, please calculate formulaically the total number of calls, texts, and emails by Invoice in each calendar month listed in row 4 of the “Part1_Calendarized_Usage” worksheet. Formulas should be populated in cells H5 – T94. Manual sample calculations have been provided for 2 Invoices to display the solutions we’re looking for (reference cells H6 – T7 highlighted in yellow in “Part1_Calendarized_Usage”).
+
+ 
+
+Part 2 – worksheets “Part2_Summary” & “Part2_Hourly_Energy_Prices”
+
+ 
+
+Jim’s Stellar Shoes and Jane’s Super Shoes have both signed up for a new service that adjusts the online pricing for their products every hour based on website traffic and Peak vs Non-Peak hours. Jim and Jane are looking to get a feel for what these hourly prices average out to on a monthly basis as well as what their monthly average prices are for just the Peak and Non-Peak hours defined by their new pricing service.
+
+ 
+
+The worksheet titled Part2_Hourly_Shoe_Prices contains hourly shoe prices from Jim’s and Jane’s online stores utilizing dynamic pricing from 1/1/2020 – 12/31/2020. Please calculate, for all months Jan ‘20 – Dec ’20, (1) average price across all hours, (2) average price across only Peak hours, and (3) average price across Non-Peak hours. The worksheet titled Part2_Summary contains a template summary table. Calculations should be calibrated to a toggle as seen in cell C3 in Part2_Summary that allows the user to switch the two stores for which prices are being calculated. Note that the summary table provided is just an example, you should feel free to adjust as you see fit (different layout, use a pivot table, etc.) so long as the output delivers the results referenced above.
+
+ 
+
+Definitions of calculation periods for Peak/Non-Peak prices are below:
+
+ 
+
+Peak – Peak hours are defined as hours 8 – 23 on days Monday – Friday, not including Store Holidays (Store Holidays are listed in “Part2_Hourly_Shoe_Prices in cells AC10:AC15)
+ 
+
+Non-Peak – Non-Peak hours are defined as a combination of
+a.       Hours 1 – 7 + hour 24 on days Monday – Friday, not including Store Holidays
+
+b.       Hours 1 – 24 on days Saturday – Sunday
+
+c.       Hours 1 – 24 on Store Holidays
+
+ 
+
+2020 Store Holiday – listed below, as well as in Part2_Hourly_Energy_Prices in column AC
+a.       1/1/2020
+
+b.       5/25/2020
+
+c.       7/4/2020
+
+d.       9/7/2020
+
+e.       11/26/2020
+
+f.        12/25/2020
